@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title> Matrix Operations </title>
+		<link rel="stylesheet" type="text/css" href="m_mult.css">
+</head>
+
+<body>
+
+<!-- POST method is preferred for sending form data,
+	 because it is secure as opposed to using GET method-->
+<form id="formData">
+	<br><br>
+	<select name="op" style="font-size: 15px;">
+	<option selected="selected" value="choose matrix"> Choose matrix operation</option>
+	<option value="addition">Addition</option>
+	<option value="subtraction">Subtraction</option>
+	<option value="multiplication">Multiplication</option>
+	<option value="inversion">Inversion</option>
+	<option value="transposition">Transposition</option>
+	<option value="1D-DFT">1-D Discrete Fourier Transform</option>
+	<option value="1D-IDFT">1-D Inverse Discrete Fourier Transform</option>
+	<option value="2D-DFT">2-D Discrete Fourier Transform</option>
+	<option value="2D-IDFT">2-D Inverse Discrete Fourier Transform</option> 
+	</select>
+	<br><br>
+	
+	<span>Matrix 1 dimension:</span>
+	<input type="text" name="M1dimRow" id="rowM1"> <span> x </span> <input type="text" name="M1dimCol" id="colM1"> 
+	<button type="button" id="setDim1">Set Dimensions</button>
+	
+	<div id="inputsM1">  
+	</div>
+	
+	<br><br><span>Matrix 2 dimension:</span>
+	<input type="text" name="M2dimRow" id="rowM2"> <span> x </span> <input type="text" name="M2dimCol" id="colM2">
+	<button type="button" id="setDim2">Set Dimensions</button>
+	
+	<div id="inputsM2">
+	</div>
+	
+	
+	<br><br>
+	<input type="submit" value="Calculate" name="submit">
+	
+	
+</form>
+
+	<div id="serverData">
+	</div>
+
+	
+
+<script src="jquery-3.1.0.js"></script>
+<script src="dynamic_input.js"></script>
+
+</body>
+</html>
